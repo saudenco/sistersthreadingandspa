@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sister’s Threading & Spa | Cincinnati, OH</title>
+  <meta name="description" content="Sister’s Threading & Spa in Cincinnati. Threading, waxing, tinting, eyelash services. Call to book: (513) 818-8106." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Sticky Nav -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand__title">Sister’s</span>
+        <span class="brand__sub">Threading & Spa</span>
+      </a>
+
+      <button class="nav__toggle" type="button"
+        aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+        <span class="nav__toggleIcon" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__links" id="navMenu" data-nav>
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#gallery">Gallery</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="btn btn--primary btn--shine" href="tel:+15138188106">Call to Book</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile overlay -->
+  <div class="overlay" data-overlay hidden></div>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero section-pad">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <h1 class="h1">
+            Beautiful brows. Smooth skin.<br />
+            <span class="accent">Confident you.</span>
+          </h1>
+
+          <p class="lead">
+            Threading, waxing, tinting, and eyelash services in a clean, welcoming space.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--shine" href="tel:+15138188106">Call to Book</a>
+            <a class="btn btn--ghost" target="_blank" rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=675+Northland+Blvd,+Cincinnati,+OH+45240">
+              Get Directions
+            </a>
+          </div>
+
+          <p class="note">
+            Walk-ins welcome for most services. For <strong>lash services & waxing</strong>, please call at least
+            <strong>24 hours</strong> in advance.
+          </p>
+        </div>
+
+        <!-- Hero media (video + image fallback) -->
+        <div class="hero__imageWrap reveal">
+          <div class="heroMedia">
+            <video class="heroMedia__video" autoplay muted loop playsinline poster="assets/hero.jpg">
+              <source src="assets/landing.jpeg" type="video/mp4">
+            </video>
+            <img class="heroMedia__img" src="assets/landing.jpeg" alt="Sister’s Threading & Spa" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust section-pad-sm">
+      <div class="container trust__grid reveal">
+        <div class="trust__card hover-lift">✨ Clean & well-maintained</div>
+        <div class="trust__card hover-lift">🌿 Relaxing, natural light</div>
+        <div class="trust__card hover-lift">🤍 Friendly staff</div>
+        <div class="trust__card hover-lift">🎯 Precision & comfort</div>
+      </div>
+    </section>
+
+    <!-- SERVICES (4 image tiles + button) -->
+    <section id="services" class="section-pad">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Services</h2>
+          <p class="muted">Four favourites — see the full menu for details and more options.</p>
+        </div>
+
+        <div class="serviceTiles reveal">
+          <a class="serviceTile hover-lift" href="services.html#eyebrows">
+            <img src="assets/hero.webp" alt="Threading" />
+            <div class="serviceTile__label">Threading</div>
+          </a>
+
+          <a class="serviceTile hover-lift" href="services.html#waxing">
+            <img src="assets/waxing.webp" alt="Waxing" />
+            <div class="serviceTile__label">Waxing</div>
+          </a>
+
+          <a class="serviceTile hover-lift" href="services.html#tinting">
+            <img src="assets/tinting.avif" alt="Tinting" />
+            <div class="serviceTile__label">Tinting</div>
+          </a>
+
+          <a class="serviceTile hover-lift" href="services.html#lashes">
+            <img src="assets/extension.webp" alt="Eyelash Extension" />
+            <div class="serviceTile__label">Eyelash Extension</div>
+          </a>
+
+          <a class="serviceTile hover-lift" href="services.html#lashes">
+            <img src="assets/nails.jpg" alt="Nails Design" />
+            <div class="serviceTile__label">Nails Design</div>
+          </a>
+
+          <a class="serviceTile hover-lift" href="services.html#lashes">
+            <img src="assets/f1.webp" alt="Facials" />
+            <div class="serviceTile__label">Facials</div>
+          </a>
+
+          <a class="serviceTile hover-lift" href="services.html#lashes">
+            <img src="assets/hanna.jpeg" alt="hanna art" />
+            <div class="serviceTile__label">Hanna Art</div>
+          </a>
+
+          <a class="serviceTile hover-lift" href="services.html#lashes">
+            <img src="assets/makeup.jpg" alt="Make Up" />
+            <div class="serviceTile__label">Make Up</div>
+          </a>
+
+          
+
+        </div>
+
+        <div class="center reveal">
+          <a class="btn btn--primary btn--shine" href="services.html">More Services</a>
+          <a class="btn btn--ghost" href="tel:+15138188106">Call to Book</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT + OWNER -->
+    <section id="about" class="section-pad section-alt">
+      <div class="container about">
+        <div class="about__text reveal">
+          <h2 class="h2">About Sister’s Threading & Spa</h2>
+          <p>
+            Sister’s Threading & Spa offers a welcoming and vibrant atmosphere that enhances every beauty visit.
+            Guests love the clean environment and the natural light that creates a warm, relaxing vibe.
+          </p>
+          <p class="muted">
+            We focus on comfort, precision, and customer satisfaction so you leave feeling confident and refreshed.
+          </p>
+        </div>
+
+        <div class="owner-card reveal hover-lift">
+          <div class="owner-card__img" role="img" aria-label="Owner photo"></div>
+          <div class="owner-card__body">
+            <h3 class="owner-card__name">Manju Chettri</h3>
+            <p class="muted owner-card__role">Owner</p>
+            <p class="owner-card__bio">
+              Known for detail, care, and a warm welcome. Every appointment is handled with precision and comfort.
+            </p>
+            <a class="btn btn--primary btn--shine" href="tel:+15138188106">Call to Book</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY + Instagram button -->
+    <section id="gallery" class="section-pad">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Gallery</h2>
+          <p class="muted">A glimpse of our space and services.</p>
+        </div>
+
+        <div class="gallery reveal" data-gallery>
+          <img src="assets/s4.jpg" alt="Gallery photo 1" loading="lazy">
+          <img src="assets/s3.avif" alt="Gallery photo 2" loading="lazy">
+          <img src="assets/g4.jpg" alt="Gallery photo 3" loading="lazy">
+          <img src="assets/g6.jpg" alt="Gallery photo 4" loading="lazy">
+          <img src="assets/waxing.webp" alt="Gallery photo 5" loading="lazy">
+          <img src="assets/nails.avif" alt="Gallery photo 6" loading="lazy">
+        </div>
+
+        <div class="center reveal">
+          <!-- Replace with real Instagram link -->
+          <a class="btn btn--primary btn--shine" target="_blank" rel="noopener" href="INSTAGRAM_URL">
+            View More on Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" data-lightbox aria-hidden="true">
+        <button class="lightbox__close" type="button" aria-label="Close">✕</button>
+        <img class="lightbox__img" alt="">
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section-pad section-alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Reviews</h2>
+          <p class="muted">Replace with your real review text anytime.</p>
+        </div>
+
+        <div class="review-grid reveal">
+          <article class="review-card hover-lift">
+            <div class="review-top">
+              <div class="avatar" style="background-image:url('assets/reviewer1.avif');"></div>
+              <div>
+                <div class="review-name">Matembe Alexis</div>
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">“Did my brows and lashes for this first time this lady did so satisfying good very good environment so comfortable to be in highly recommend place😘😍”</p>
+          </article>
+
+          <article class="review-card hover-lift">
+            <div class="review-top">
+              <div class="avatar" style="background-image:url('assets/reviewer2.avif');"></div>
+              <div>
+                <div class="review-name">Mitchell Kelsie</div>
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">“My only choice for brow waxing and tinting. I absolutely love Jasna!! She always does a great job and she’s almost always available. She’s been doing my mani-pedi since the ambiance days. I highly recommend this spa for quality work, good price and 7 day a week service hours.”</p>
+          </article>
+
+          <article class="review-card hover-lift">
+            <div class="review-top">
+              <div class="avatar" style="background-image:url('assets/reviewer3.avif');"></div>
+              <div>
+                <div class="review-name">Pearson Jackie</div>
+                <div class="stars" aria-label="5 stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="review-text">“This was my first time coming here and let's just say I'll be returning. Jasna did a wonderful job with my eyebrows. She shaped them exactly the way I wanted. She was extremely friendly. I'll definitely be back. The prices are right!!!”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-pad">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <h2 class="h2">Call to Book</h2>
+          <p class="lead">Quick booking by phone — we’d love to welcome you.</p>
+
+          <div class="contact__cards">
+            <div class="contact-card hover-lift">
+              <div class="contact-card__label">Phone</div>
+              <a class="contact-card__value" href="tel:+15138188106">(513) 818-8106</a>
+            </div>
+
+            <div class="contact-card hover-lift">
+              <div class="contact-card__label">Address</div>
+              <div class="contact-card__value">675 Northland Blvd, Cincinnati, OH 45240</div>
+            </div>
+          </div>
+
+          <div class="hours-box hover-lift">
+            <h3>Hours</h3>
+            <p><strong>Mon:</strong> Closed</p>
+            <p><strong>Tue–Sat:</strong> 10:00 AM – 7:00 PM</p>
+            <p><strong>Sun:</strong> 11:00 AM – 6:00 PM</p>
+            <p class="muted small">For lash services & waxing, please call at least 24 hours in advance.</p>
+          </div>
+
+          <div class="contact__cta">
+            <a class="btn btn--primary btn--shine" href="tel:+15138188106">Call to Book</a>
+            <a class="btn btn--ghost" target="_blank" rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=675+Northland+Blvd,+Cincinnati,+OH+45240">
+              Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__map reveal hover-lift">
+          <iframe
+            title="Map to Sister’s Threading & Spa"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=675%20Northland%20Blvd%2C%20Cincinnati%2C%20OH%2045240&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile sticky actions -->
+  <div class="mobile-bar" aria-label="Quick actions">
+    <a class="mobile-bar__call" href="tel:+15138188106">Call</a>
+    <a class="mobile-bar__dir" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/search/?api=1&query=675+Northland+Blvd,+Cincinnati,+OH+45240">
+      Directions
+    </a>
+  </div>
+
+  <!-- Footer (same footer goes to services.html too) -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">Sister’s Threading & Spa</div>
+        <div class="small muted">675 Northland Blvd, Cincinnati, OH 45240</div>
+        <div class="small"><a href="tel:+15138188106">(513) 818-8106</a></div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="services.html">Services</a>
+      </div>
+
+      <div class="footer__social">
+        <div class="small muted">Follow</div>
+        <div class="social-row">
+          <a class="icon-btn" href="INSTAGRAM_URL" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-2.2a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="FACEBOOK_URL" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.5 22v-8h3l.6-4h-3.6V7.5c0-1.2.3-2 2-2H17V2.1c-.8-.1-2-.1-3.4-.1-3.1 0-5.1 1.9-5.1 5.4V10H5v4h3.5v8h5Z"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="TIKTOK_URL" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2h2c.2 2.2 1.6 4 3.8 4.4V9c-1.6 0-3-.5-4.2-1.4v6.7a6.3 6.3 0 1 1-6.3-6.3c.4 0 .8 0 1.2.1V11a3.2 3.2 0 1 0 2.2 3V2Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span class="small muted">© <span id="year"></span> Sister’s Threading & Spa. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

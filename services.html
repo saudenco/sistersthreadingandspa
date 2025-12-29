@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | Sister’s Threading & Spa</title>
+  <meta name="description" content="Full service menu for Sister’s Threading & Spa in Cincinnati. Call to book: (513) 818-8106." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="index.html#home" aria-label="Go to home">
+        <span class="brand__title">Sister’s</span>
+        <span class="brand__sub">Threading & Spa</span>
+      </a>
+
+      <button class="nav__toggle" type="button"
+        aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+        <span class="nav__toggleIcon" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__links" id="navMenu" data-nav>
+        <a class="nav__link" href="index.html#home">Home</a>
+        <a class="nav__link" href="index.html#about">About</a>
+        <a class="nav__link" href="index.html#gallery">Gallery</a>
+        <a class="nav__link" href="index.html#contact">Contact</a>
+        <a class="btn btn--primary btn--shine" href="tel:+15138188106">Call to Book</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="overlay" data-overlay hidden></div>
+
+  <main>
+    <!-- Top banner rectangle -->
+    <section class="servicesHero">
+      <div class="container">
+        <div class="servicesHero__banner reveal">
+          <img src="assets/services.jpg" alt="Our Services" />
+        </div>
+
+        <div class="servicesHero__text reveal">
+          <h1 class="h1">Our Services</h1>
+          <p class="muted">
+            For <strong>lash services & waxing</strong>, please call at least <strong>24 hours</strong> in advance.
+            Walk-ins welcome for most other services.
+          </p>
+
+          <div class="servicesHero__cta">
+            <a class="btn btn--primary btn--shine" href="tel:+15138188106">Call to Book</a>
+            <a class="btn btn--ghost" href="index.html#contact">Directions & Hours</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed services -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="serviceDetailGrid reveal">
+
+          <article class="serviceDetailCard hover-lift" id="eyebrows">
+            <h2 class="h2">Eyebrows & Face</h2>
+            <ul class="detailList">
+              <li>Eyebrow Threading</li>
+              <li>Eyebrow Waxing</li>
+              <li>Eyebrow Tinting</li>
+              <li>Upper Lip / Chin (if offered)</li>
+              <li>Full Face (if offered)</li>
+            </ul>
+          </article>
+
+          <article class="serviceDetailCard hover-lift" id="waxing">
+            <h2 class="h2">Waxing</h2>
+            <ul class="detailList">
+              <li>Face Waxing</li>
+              <li>Body Waxing</li>
+              <li>Custom Waxing Options</li>
+              <li><strong>Call 24 hours ahead</strong></li>
+            </ul>
+          </article>
+
+          <article class="serviceDetailCard hover-lift" id="tinting">
+            <h2 class="h2">Tinting</h2>
+            <ul class="detailList">
+              <li>Brow Tint</li>
+              <li>Lash Tint (if offered)</li>
+              <li>Custom shade matching</li>
+              <li>Ask in-store for availability</li>
+            </ul>
+          </article>
+
+          <article class="serviceDetailCard hover-lift" id="lashes">
+            <h2 class="h2">Eyelash Services</h2>
+            <ul class="detailList">
+              <li>Eyelash Extensions</li>
+              <li>Natural / Volume styles</li>
+              <li>Custom sets</li>
+              <li><strong>Call 24 hours ahead</strong></li>
+            </ul>
+          </article>
+
+          <article class="serviceDetailCard hover-lift" id="spa">
+            <h2 class="h2">Beauty & Spa</h2>
+            <ul class="detailList">
+              <li>Facials (if offered)</li>
+              <li>Skin care services</li>
+              <li>Relaxing treatments</li>
+              <li>Ask in-store for full menu</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="center reveal">
+          <a class="btn btn--primary btn--shine" href="tel:+15138188106">Call to Book</a>
+          <a class="btn btn--ghost" href="index.html#services">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SAME FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">Sister’s Threading & Spa</div>
+        <div class="small muted">675 Northland Blvd, Cincinnati, OH 45240</div>
+        <div class="small"><a href="tel:+15138188106">(513) 818-8106</a></div>
+      </div>
+
+      <div class="footer__links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="services.html">Services Page</a>
+      </div>
+
+      <div class="footer__social">
+        <div class="small muted">Follow</div>
+        <div class="social-row">
+          <a class="icon-btn" href="INSTAGRAM_URL" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-2.2a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="FACEBOOK_URL" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.5 22v-8h3l.6-4h-3.6V7.5c0-1.2.3-2 2-2H17V2.1c-.8-.1-2-.1-3.4-.1-3.1 0-5.1 1.9-5.1 5.4V10H5v4h3.5v8h5Z"/>
+            </svg>
+          </a>
+
+          <a class="icon-btn" href="TIKTOK_URL" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2h2c.2 2.2 1.6 4 3.8 4.4V9c-1.6 0-3-.5-4.2-1.4v6.7a6.3 6.3 0 1 1-6.3-6.3c.4 0 .8 0 1.2.1V11a3.2 3.2 0 1 0 2.2 3V2Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span class="small muted">© <span id="year"></span> Sister’s Threading & Spa. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
